@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sui/core.dart';
 import 'package:sui/shared/theme/theme.dart';
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: getDefaultTheme(),
       debugShowCheckedModeBanner: false,
-      home: SplashView(),
+      // home: SplashView(),
+      home: kDebugMode ? const IntroView() : SplashView(),
+      // home: kReleaseMode ? const IntroView() : SplashView(),
     );
   }
 }
