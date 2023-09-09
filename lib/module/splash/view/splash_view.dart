@@ -1,31 +1,30 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:sui/core.dart';
 import '../controller/splash_controller.dart';
 
 class SplashView extends StatefulWidget {
-    const SplashView({Key? key}) : super(key: key);
+  SplashView({Key? key}) : super(key: key);
 
-    Widget build(context, SplashController controller) {
+  Widget build(context, SplashController controller) {
     controller.view = this;
 
     return Scaffold(
-        appBar: AppBar(
-        title: const Text("Splash"),
-        actions: const [],
-        ),
-        body: SingleChildScrollView(
-        child: Container(
-            padding: const EdgeInsets.all(10.0),
-            child: Column(
-            children: const [],
+      // Hotkey "Center" = ctrl+shift+alt+C
+      body: Center(
+        // image_asset
+        child: Image.asset(
+          "assets/icon/icon.png",
+          width: 120.0,
+          height: 120.0,
+          fit: BoxFit.fill,
+        ).animate().fadeIn(
+              duration: 2000.ms,
             ),
-        ),
-        ),
+      ),
     );
-    }
+  }
 
-    @override
-    State<SplashView> createState() => SplashController();
+  @override
+  State<SplashView> createState() => SplashController();
 }
-    
