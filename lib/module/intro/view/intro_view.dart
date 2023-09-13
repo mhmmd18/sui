@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:sui/core.dart';
+import 'package:sui/service/storage/local_data_service.dart';
 import '../../../shared/widget/button/button.dart';
 
 class IntroView extends StatefulWidget {
@@ -164,6 +165,7 @@ class IntroView extends StatefulWidget {
               QButton(
                 label: "Next",
                 onPressed: () {
+                  LocalDataService().saveFirstTimeLogin();
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const LoginView()),

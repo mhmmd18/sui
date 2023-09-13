@@ -59,6 +59,7 @@ class LoginView extends StatefulWidget {
               QTextField(
                 label: "Email",
                 prefixIcon: Icons.email,
+                autoFocus: true,
                 onChanged: (value) => {},
                 onSubmitted: (value) => {},
               ),

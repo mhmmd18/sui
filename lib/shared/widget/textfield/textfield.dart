@@ -10,6 +10,7 @@ class QTextField extends StatelessWidget {
   final Function(String text) onChanged;
   final Function(String text) onSubmitted;
   final bool obscureText;
+  final bool autoFocus;
   const QTextField({
     Key? key,
     required this.label,
@@ -18,6 +19,7 @@ class QTextField extends StatelessWidget {
     required this.onChanged,
     required this.onSubmitted,
     this.obscureText = false,
+    this.autoFocus = false,
   }) : super(key: key);
 
   @override
@@ -44,6 +46,7 @@ class QTextField extends StatelessWidget {
           ],
           Expanded(
             child: TextFormField(
+              autofocus: autoFocus,
               obscureText: obscureText,
               decoration: InputDecoration.collapsed(
                 hintText: label,
