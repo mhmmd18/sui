@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:sui/core.dart';
 import '../../../shared/widget/button/button.dart';
-import '../controller/intro_controller.dart';
 
 class IntroView extends StatefulWidget {
   const IntroView({Key? key}) : super(key: key);
@@ -22,7 +21,6 @@ class IntroView extends StatefulWidget {
               final CarouselController carouselController = CarouselController();
               */
               //#TEMPLATE carousel_intro
-              cao
               Expanded(
                 child: Builder(builder: (context) {
                   List<Map<String, dynamic>> intrunctionItems = [
@@ -71,7 +69,7 @@ class IntroView extends StatefulWidget {
                             height: 500,
                             autoPlay: true,
                             // delete overflow
-                            // enlargeFactor: 1.0, 
+                            // enlargeFactor: 1.0,
                             // width full
                             viewportFraction: 1,
                             enlargeCenterPage: true,
