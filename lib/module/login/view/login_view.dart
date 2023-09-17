@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sui/core.dart';
-import 'package:sui/shared/theme/theme_color.dart';
-import 'package:sui/shared/widget/button/button.dart';
-import 'package:sui/shared/widget/textfield/textfield.dart';
-import '../controller/login_controller.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -83,12 +79,15 @@ class LoginView extends StatefulWidget {
               const SizedBox(
                 height: 10.0,
               ),
-              Text(
-                "Forgot Password",
-                style: TextStyle(
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.bold,
-                    color: primaryColor),
+              InkWell(
+                onTap: () => Get.to(const ForgotPasswordView()),
+                child: Text(
+                  "Forgot Password",
+                  style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
+                      color: primaryColor),
+                ),
               ),
               const Spacer(),
               QButton(

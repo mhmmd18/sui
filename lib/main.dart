@@ -1,8 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sui/core.dart';
-import 'package:sui/service/storage/local_data_service.dart';
-import 'package:sui/shared/theme/theme.dart';
 
 void main() async {
   await LocalDataService().load();
@@ -22,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: getDefaultTheme(),
       debugShowCheckedModeBanner: false,
+      navigatorKey: Get.navigatorKey,
       // home: SplashView(),
       home: kDebugMode ? mainView : SplashView(),
       // home: kDebugMode ? const IntroView() : SplashView(),

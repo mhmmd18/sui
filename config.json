@@ -3,7 +3,8 @@
         "splash",
         "intro",
         "login",
-        "register"
+        "register",
+        "forgot_password"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,

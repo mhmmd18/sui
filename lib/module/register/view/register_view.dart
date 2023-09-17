@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:sui/core.dart';
 
@@ -87,8 +86,6 @@ class RegisterView extends StatefulWidget {
                               fontWeight: FontWeight.bold,
                               color: primaryColor,
                             ),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () => Navigator.pop(context),
                           ),
                           TextSpan(
                             text: ' and ',
