@@ -74,7 +74,7 @@ class LoginView extends StatefulWidget {
               ),
               QButton(
                 label: "Login",
-                onPressed: () {},
+                onPressed: () => Get.to(const MainNavigationBarView()),
               ),
               const SizedBox(
                 height: 10.0,

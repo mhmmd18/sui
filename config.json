@@ -4,7 +4,9 @@
         "intro",
         "login",
         "register",
-        "forgot_password"
+        "forgot_password",
+        "main_navigation_bar",
+        "dashboard"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
