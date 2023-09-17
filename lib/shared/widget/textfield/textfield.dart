@@ -25,7 +25,7 @@ class QTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         borderRadius: const BorderRadius.all(
           Radius.circular(6.0),

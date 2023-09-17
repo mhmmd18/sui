@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sui/core.dart';
-import '../controller/main_navigation_bar_controller.dart';
 
 class MainNavigationBarView extends StatefulWidget {
   const MainNavigationBarView({Key? key}) : super(key: key);
@@ -30,9 +29,7 @@ class MainNavigationBarView extends StatefulWidget {
             Container(
               color: Colors.blue,
             ),
-            Container(
-              color: Colors.purple,
-            ),
+            const ProfileView(),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
@@ -62,7 +59,7 @@ class MainNavigationBarView extends StatefulWidget {
               icon: Icon(
                 Icons.person,
               ),
-              label: "User",
+              label: "Profile",
             ),
           ],
         ),

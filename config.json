@@ -6,7 +6,9 @@
         "register",
         "forgot_password",
         "main_navigation_bar",
-        "dashboard"
+        "dashboard",
+        "profile",
+        "change_password"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
