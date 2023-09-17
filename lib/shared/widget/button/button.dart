@@ -5,12 +5,14 @@ import '../../theme/theme_color.dart';
 class QButton extends StatelessWidget {
   final String label;
   final Color? color;
+  final Color? textColor;
   final Function onPressed;
   final bool disabled;
   const QButton({
     Key? key,
     required this.label,
     this.color,
+    this.textColor,
     required this.onPressed,
     this.disabled = false,
   }) : super(key: key);
@@ -53,8 +55,8 @@ class QButton extends StatelessWidget {
         onPressed: () => onPressed(),
         child: Text(
           label,
-          style: const TextStyle(
-            color: Colors.white,
+          style: TextStyle(
+            color: textColor ?? Colors.white,
             fontSize: 14,
           ),
         ),

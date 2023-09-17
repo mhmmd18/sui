@@ -93,8 +93,12 @@ class LoginView extends StatefulWidget {
               const Spacer(),
               QButton(
                 label: "Sign Up",
-                onPressed: () {},
-                disabled: true,
+                color: disabledColor,
+                textColor: disabledTextColor,
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const RegisterView()),
+                ),
               )
             ],
           ),
